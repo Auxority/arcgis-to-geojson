@@ -248,7 +248,7 @@ export default class ArcgisConverter {
 
     private static shallowClone = (obj: GenericObject): GenericObject => {
         const target: GenericObject = {};
-        for (var i in obj) {
+        for (let i in obj) {
             if (obj.hasOwnProperty(i)) {
                 target[i] = obj[i];
             }
